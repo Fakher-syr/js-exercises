@@ -31,17 +31,17 @@ function format(num) {
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = multiply(add(startingValue, 10), 2); //difficult to read, and debug in case of errors.
+let badCode = multiply(add(startingValue, 10), 2); //difficult to read, and to debug in case of errors.
 
 /* BETTER PRACTICE */
 
 function getResultsFormated(num1, num2, num3) {
-  const addedNumber = num1 + num2;
-  const multipledNumber = addedNumber * num3;
+  const addedNumber = add(num1, num2);
+  const multipledNumbers = multiply(addedNumber, num3);
   return "£" + multipledNumber;
 }
-const addedNumber = num1 + num2;
-const multipledNumber = addedNumber * num3;
+const addedNumber = add(num1, num2);
+const multipledNumbers = multipy(ddedNumber, num3);
 let goodCode = "£" + multipledNumber;
 /* ======= TESTS - DO NOT MODIFY ===== */
 
